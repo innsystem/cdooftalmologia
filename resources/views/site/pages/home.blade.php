@@ -85,7 +85,7 @@
                     <p class="wow fadeInUp" data-wow-delay=".4s">{{ $about->description_2 }}</p>
                     @endif
                     @if($about->features && count($about->features) > 0)
-                    <ul class="ul-check text-dark cols-2 fw-600 mb-4 wow fadeInUp" data-wow-delay=".6s">
+                    <ul class="ul-check text-dark cols-1 fw-600 mb-4 wow fadeInUp" data-wow-delay=".6s">
                         @foreach($about->features as $feature)
                         @if(!empty($feature))
                         <li>{{ $feature }}</li>
@@ -235,7 +235,7 @@
         </div>
         <div class="row justify-content-center">
             @foreach($exams->take(4) as $index => $exam)
-            <div class="col-6 col-md-3 de-step {{ $index < 3 ? 'de-step-arrow' : '' }} wow fadeInUp" data-wow-delay="{{ $index * 0.2 }}s">
+            <div class="col-12 col-md-3 de-step {{ $index < 3 ? 'de-step-arrow' : '' }} wow fadeInUp" data-wow-delay="{{ $index * 0.2 }}s">
                 <div class="de-step-icon bg-white id-color">
                     @if($exam->icon)
                     <i class="{{ $exam->icon }} fa-2x"></i>
