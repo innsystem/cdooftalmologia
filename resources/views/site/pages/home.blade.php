@@ -8,10 +8,10 @@
         <div class="row g-4">
             <div class="spacer-double"></div>
             <div class="col-lg-6">
-                <h1 class="split">{{ $hero && $hero->title ? $hero->title : 'Expert Vision Care and Trusted Eye Specialists' }}</h1>
+                <h1 class="wow fadeInUp" data-wow-delay=".2s">{{ $hero && $hero->title ? $hero->title : 'Expert Vision Care and Trusted Eye Specialists' }}</h1>
                 <div class="spacer-single"></div>
                 <div class="row g-4 align-items-center">
-                    <div class="col-lg-12 wow fadeInRight" data-wow-delay="1.8s">
+                    <div class="col-lg-12 wow fadeInUp" data-wow-delay=".2s">
                         <p class="mb-0">{{ $hero && $hero->description ? $hero->description : 'Comprehensive eye exams with modern tools that provide accurate results while ensuring comfort and clarity for every patient.' }}</p>
                         @if($hero && $hero->button_text && $hero->button_link)
                         <a class="btn-main fx-slide mt-4" href="{{ $hero->button_link }}"><span>{{ $hero->button_text }}</span></a>
@@ -77,15 +77,15 @@
                     @if($about->subtitle)
                     <div class="subtitle s2 mb-3 wow fadeInUp" data-wow-delay=".0s">{{ $about->subtitle }}</div>
                     @endif
-                    <h2 class="split" data-wow-delay=".2s">{{ $about->title }}</h2>
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s">{{ $about->title }}</h2>
                     @if($about->description)
-                    <p class="wow fadeInUp" data-wow-delay=".4s">{{ $about->description }}</p>
+                    <p class="wow fadeInUp" data-wow-delay=".2s">{{ $about->description }}</p>
                     @endif
                     @if($about->description_2)
-                    <p class="wow fadeInUp" data-wow-delay=".4s">{{ $about->description_2 }}</p>
+                    <p class="wow fadeInUp" data-wow-delay=".2s">{{ $about->description_2 }}</p>
                     @endif
                     @if($about->features && count($about->features) > 0)
-                    <ul class="ul-check text-dark cols-1 fw-600 mb-4 wow fadeInUp" data-wow-delay=".6s">
+                    <ul class="ul-check text-dark cols-1 fw-600 mb-4 wow fadeInUp" data-wow-delay=".3s">
                         @foreach($about->features as $feature)
                         @if(!empty($feature))
                         <li>{{ $feature }}</li>
@@ -94,7 +94,7 @@
                     </ul>
                     @endif
                     @if($about->button_text && $about->button_link)
-                    <a class="btn-main fx-slide wow fadeInUp" data-wow-delay=".8s" href="{{ $about->button_link }}"><span>{{ $about->button_text }}</span></a>
+                    <a class="btn-main fx-slide wow fadeInUp" data-wow-delay=".4s" href="{{ $about->button_link }}"><span>{{ $about->button_text }}</span></a>
                     @endif
                 </div>
             </div>
@@ -123,9 +123,9 @@
     <div class="container relative z-2">
         <div class="row mb-3 g-4 align-items-center justify-content-between">
             <div class="col-lg-6 text-light">
-                <div class="uptitle wow fadeInUp">Depoimentos</div>
-                <h2 class="split">O que nossos pacientes dizem</h2>
-                <p>Do atendimento oftalmológico completo às cirurgias especializadas, nosso compromisso é cuidar de cada olhar com tecnologia, carinho e acompanhamento constante.</p>
+                <div class="uptitle wow fadeInUp" data-wow-delay=".0s">Depoimentos</div>
+                <h2 class="wow fadeInUp" data-wow-delay=".2s">O que nossos pacientes dizem</h2>
+                <p class="wow fadeInUp" data-wow-delay=".2s">Do atendimento oftalmológico completo às cirurgias especializadas, nosso compromisso é cuidar de cada olhar com tecnologia, carinho e acompanhamento constante.</p>
             </div>
             <div class="col-lg-6">
                 <div class="relative">
@@ -188,8 +188,8 @@
     <div class="container relative z-2">
         <div class="row g-4 mb-2 justify-content-center">
             <div class="col-lg-6 text-center">
-                <div class="subtitle s2 wow fadeInUp mb-2">Especialidades</div>
-                <h2 class="split" data-wow-delay=".2s">Cuidado Oftalmológico Completo</h2>
+                <div class="subtitle s2 wow fadeInUp mb-2" data-wow-delay=".0s">Especialidades</div>
+                <h2 class="wow fadeInUp" data-wow-delay=".2s">Cuidado Oftalmológico Completo</h2>
             </div>
         </div>
         <div class="row g-4">
@@ -229,8 +229,8 @@
     <div class="container relative z-2">
         <div class="row g-4">
             <div class="col-lg-6 offset-lg-3 text-center">
-                <div class="subtitle wow fadeInUp">Exames oftalmológicos</div>
-                <h2 class="split" data-wow-delay=".2s">Diagnósticos preciso com tecnologia de ponta</h2>
+                <div class="subtitle wow fadeInUp" data-wow-delay=".0s">Exames oftalmológicos</div>
+                <h2 class="wow fadeInUp" data-wow-delay=".2s">Diagnósticos preciso com tecnologia de ponta</h2>
             </div>
         </div>
         <div class="row justify-content-center">
@@ -264,7 +264,7 @@
         <div class="row g-4">
             <div class="col-lg-6">
                 <div class="subtitle id-color">FAQ</div>
-                <h2 class="split">
+                <h2>
                     Tudo o que Você Precisa Saber Sobre Cuidados Oculares
                 </h2>
             </div>
