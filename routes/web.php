@@ -101,8 +101,6 @@ Route::prefix('admin')->group(function () {
             Route::get('/load', 'load')->name('admin.permissions.load')->middleware('permission:admin.permissions.load');
             Route::get('/create', 'create')->name('admin.permissions.create')->middleware('permission:admin.permissions.create');
             Route::post('/store', 'store')->name('admin.permissions.store')->middleware('permission:admin.permissions.store');
-            Route::get('/{id}/edit', 'edit')->name('admin.permissions.edit')->middleware('permission:admin.permissions.edit');
-            Route::post('/{id}/update', 'update')->name('admin.permissions.update')->middleware('permission:admin.permissions.update');
             Route::post('/{id}/delete', 'delete')->name('admin.permissions.delete')->middleware('permission:admin.permissions.delete');
         });
 

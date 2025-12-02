@@ -149,27 +149,6 @@
             });
     });
 
-    // Edit
-    $(document).on("click", ".button-permissions-edit", function(e) {
-        e.preventDefault();
-
-        let permission_id = $(this).data('permission-id');
-
-        $("#modal-content-permissions").html('');
-        $("#modalPermissionsLabel").text('Editar Permissões');
-        var offcanvas = new bootstrap.Offcanvas($('#modalPermissions'));
-        offcanvas.show();
-
-        var url = `{{ url('/admin/permissions/${permission_id}/edit') }}`;
-        $.get(url,
-            $(this).addClass('modal-scrollfix'),
-            function(data) {
-                $("#modal-content-permissions").html(data);
-                $(".button-permissions-save").attr('data-type', 'edit').attr('data-permission-id', permission_id);
-                initMasks();
-            });
-    });
-
     // Save
     $(document).on('click', '.button-permissions-save', function(e) {
         e.preventDefault();

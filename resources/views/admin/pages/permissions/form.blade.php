@@ -1,17 +1,10 @@
 <form id="form-request-permissions">
     <div class="modal-body">
-        <div class="form-group mb-3">
-            <label for="title" class="col-sm-12">Título:</label>
-            <div class="col-sm-12">
-                <input type="text" class="form-control" id="title" name="title" placeholder="Digite o título" value="{{ isset($result->title) ? $result->title : '' }}">
-            </div>
-        </div>
-        <div class="form-group mb-3">
-            <label for="key" class="col-sm-12">Route (admin.module.function):</label>
-            <div class="col-sm-12">
-                <select name="key" id="key" class="form-select">
+        <div class="row mb-2">
+            <div class="col-12">
+                <select name="routes[]" id="multi-route-select fs-4" class="form-select" multiple style="height: 440px;">
                     @foreach($routes as $route)
-                    <option value="{{$route['uri']}}" {{ isset($result->key) && $result->key == $route['uri'] ? 'selected' : '' }}>{{$route['uri']}}</option>
+                    <option class="py-1" value="{{$route['name']}}">{{$route['name']}}</option>
                     @endforeach
                 </select>
             </div>

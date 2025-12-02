@@ -183,50 +183,6 @@
             </div>
         </div>
 
-        <div class="py-2 d-flex align-items-sm-center flex-sm-row flex-column">
-            <div class="flex-grow-1">
-                <h4 class="fs-18 fw-semibold m-0">Configurações da Landing Page - Concept Clinic</h4>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div class="form-group mb-3">
-                                    <label for="link_payment_lp_1">Link de Pagamento Landing-page Clinic Concept</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" id="link_payment_lp_1" name="link_payment_lp_1" value="{{ $result['link_payment_lp_1'] ?? '' }}">
-                                    </div>
-                                </div>
-
-                                <div class="form-group mb-3">
-                                    <label>Incluir <b>Script</b> na seção HEAD</label>
-                                    <textarea rows="4" class="form-control" name="script_head_lp" placeholder="Scripts de Redes Sociais na seção HEAD (Cabeçalho da Página)">{{ $result['script_head_lp'] ?? '' }}</textarea>
-                                </div>
-                                <div class="form-group mb-0">
-                                    <label>Incluir <b>Script</b> na seção BODY</label>
-                                    <textarea rows="4" class="form-control" name="script_body_lp" placeholder="Scripts de Redes Sociais na seção BODY (Corpo da Página)">{{ $result['script_body_lp'] ?? '' }}</textarea>
-                                </div>
-                            </div><!-- col -->
-
-                        </div><!-- row -->
-
-                        <!-- Row Buttons -->
-                        <div class="row">
-                            <div class="col-12 border-top pt-3 mt-3">
-                                <div class="d-flex gap-2">
-                                    <button type="button" class="btn btn-success button-settings-update"><i class="fa fa-check"></i> Salvar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
         <div class="py-2 d-flex align-items-sm-center flex-sm-row flex-column d-none">
             <div class="flex-grow-1">
                 <h4 class="fs-18 fw-semibold m-0">Configuração da API (avançado)</h4>
