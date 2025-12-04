@@ -34,9 +34,9 @@
     <!-- CSS here -->
     <link href="{{ asset('/tpl_site/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" id="bootstrap">
     <link href="{{ asset('/tpl_site/css/plugins.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('/tpl_site/css/style.css?1'.rand()) }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('/tpl_site/css/style.css?2') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('/tpl_site/css/coloring.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('/tpl_site/css/template_custom.css?1') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('/tpl_site/css/template_custom.css?2') }}" rel="stylesheet" type="text/css">
     <!-- color scheme -->
     <link id="colors" href="{{ asset('/tpl_site/css/colors/scheme-01.css') }}" rel="stylesheet" type="text/css">
 
