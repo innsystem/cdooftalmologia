@@ -261,7 +261,7 @@
                         <div class="col-md-12">
                             <div class="de-flex">
                                 <div class="de-flex-col">
-                                    &copy; {{ date('Y') }} - {{ $getSettings['site_name'] }}. Todos os direitos reservados.
+                                    &copy; {{ date('Y') }} - {{ $getSettings['site_name'] }}. <br class="d-block d-md-none"> Todos os direitos reservados.
                                 </div>
                                 <ul class="menu-simple">
                                     <span class="developers">Desenvolvido por <a href="https://kiwimidia.com" target="_Blank"><img data-src="{{ asset('/logo_kiwimidia_branco.png') }}" class="" loading="lazy" style="width:80px;" alt="Kiwimídia" src="{{ asset('/logo_kiwimidia_branco.png') }}"></a></span>
