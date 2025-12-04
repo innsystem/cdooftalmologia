@@ -138,7 +138,7 @@
 
         @if(isset($getSettings['whatsapp']) && $getSettings['whatsapp'] != '')
         <div class="whatsapp_futuante pulsaDelay animate__animated animate__tada">
-            <a href="https://api.whatsapp.com/send/?phone=55{{ preg_replace('/\D/', '', $getSettings['whatsapp']) }}&text=Ol%C3%A1!%20V%C3%AD%20o%20site%2C%20e%20gostaria%20de%20marcar%20uma%20consulta%20com%20a%20Dra%20Tais" target="_Blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=55{{ preg_replace('/\D/', '', $getSettings['whatsapp']) }}" target="_Blank"><i class="fab fa-whatsapp"></i></a>
         </div>
         @endif
 
@@ -148,10 +148,11 @@
             <div class="container">
                 <div class="row gx-5">
                     <div class="col-lg-4 col-sm-6">
-                        <img src="{{ asset('/galerias/logo_cdo.png') }}" class="logo-footer" alt="Logomarca CDO Oftalmologia">
+                        <img src="{{ asset('/galerias/logo_cdo_branco.png') }}" class="logo-footer" alt="Logomarca CDO Oftalmologia">
                         <div class="spacer-20"></div>
-                        <p>Sejam bem-vindos ao maior hospital de olhos do Sudeste Goiano, referência em tecnologia, excelência médica e atendimento humanizado. Agora, estamos ainda mais próximos de você com a nova unidade em Pires do Rio.</p>
-                        <p class="mt-3">Com mais de X anos de experiência dedicados à saúde ocular, contamos com especialistas, equipamentos de alta tecnologia e a confiança de centenas de pacientes em toda a região.</p>
+                        @if(isset($getSettings['meta_description']) && $getSettings['meta_description'] != '')
+                        <p>{!! nl2br(e($getSettings['meta_description'])) !!}</p>
+                        @endif
 
                         <div class="social-icons mb-sm-30">
                             @if(isset($getSettings['facebook']) && $getSettings['facebook'] != '')
@@ -161,7 +162,7 @@
                             <a href="{{ $getSettings['twitter'] }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
                             @endif
                             @if(isset($getSettings['whatsapp']) && $getSettings['whatsapp'] != '')
-                            <a href="https://api.whatsapp.com/send/?phone=55{{ preg_replace('/\D/', '', $getSettings['whatsapp']) }}&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20no%20CDO%20Oftalmologia." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://api.whatsapp.com/send/?phone=55{{ preg_replace('/\D/', '', $getSettings['whatsapp']) }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
                             @endif
                             @if(isset($getSettings['instagram']) && $getSettings['instagram'] != '')
                             <a href="{{ $getSettings['instagram'] }}" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
@@ -235,7 +236,7 @@
                                 @if(isset($getSettings['whatsapp']) && $getSettings['whatsapp'] != '')
                                 <div class="mb-1 d-flex align-items-center gap-2">
                                     <span class="text-muted d-block">WhatsApp</span>
-                                    <a href="https://api.whatsapp.com/send/?phone=55{{ preg_replace('/\D/', '', $getSettings['whatsapp']) }}&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20no%20CDO%20Oftalmologia." target="_blank" class="text-white">
+                                    <a href="https://api.whatsapp.com/send/?phone=55{{ preg_replace('/\D/', '', $getSettings['whatsapp']) }}" target="_blank" class="text-white">
                                         {{ $getSettings['whatsapp'] }}
                                     </a>
                                 </div>

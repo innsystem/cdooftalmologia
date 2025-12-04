@@ -66,3 +66,15 @@
         opacity: 0;
     }
 }
+
+/* Background fixo sem parallax */
+.bg-fixed-no-parallax {
+    background-size: cover !important;
+    background-position: center center !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+}
+
+.subfooter {
+    font-size: 12px;
+}

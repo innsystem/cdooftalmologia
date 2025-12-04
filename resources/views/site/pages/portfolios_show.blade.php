@@ -60,9 +60,9 @@ $featuredImage = collect($portfolio->images)->firstWhere('featured', 1);
                                     <i class="fal fa-phone-volume"></i>
                                 </div>
                                 <h5>Precisa de Orçamento?</h5>
-                                <a class="pt-25 pb-25 phone" href="https://api.whatsapp.com/send/?phone=55{{$getSettings['cellphone']}}">{{ $getSettings['cellphone'] }}</a>
+                                <a class="pt-25 pb-25 phone" href="https://api.whatsapp.com/send/?phone=55{{ preg_replace('/\D/', '', $getSettings['cellphone']) }}">{{ $getSettings['cellphone'] }}</a>
                                 <div class="btn-box">
-                                    <a class="primary-btn-1 btn-hover" href="https://api.whatsapp.com/send/?phone=55{{$getSettings['cellphone']}}">
+                                    <a class="primary-btn-1 btn-hover" href="https://api.whatsapp.com/send/?phone=55{{ preg_replace('/\D/', '', $getSettings['cellphone']) }}">
                                         ENTRE EM CONTATO &nbsp; | <i class="icon-right-arrow"></i>
                                         <span style="top: 147.172px; left: 108.5px;"></span>
                                     </a>

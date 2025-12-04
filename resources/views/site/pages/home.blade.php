@@ -222,9 +222,8 @@
 @endif
 
 @if(isset($exams) && $exams->count() > 0)
-<section id="exames" class="relative jarallax text-light">
+<section id="exames" class="relative text-light bg-fixed-no-parallax" style="background-image: url('{{ asset('/tpl_site/images/background/2.webp') }}');">
     <div class="gradient-edge-bottom color h-100"></div>
-    <img src="{{ asset('/tpl_site/images/background/2.webp') }}" class="jarallax-img" alt="Processo">
     <div class="sw-overlay op-4"></div>
     <div class="container relative z-2">
         <div class="row g-4">
